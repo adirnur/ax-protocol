@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "axs-client"
+version = "0.1.0"
+description = "Minimal client for AXS — the compact agent language of the AX Protocol. One GET: offers, prices, availability and next actions. ~80% fewer tokens than the JSON crawl."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [{ name = "Rainz.ai", email = "hello@rainz.ai" }]
+keywords = ["axs", "ax-protocol", "ai-agents", "llm", "agent-web", "wordpress", "compact-protocol", "llms-txt"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Internet :: WWW/HTTP",
+  "Topic :: Software Development :: Libraries",
+]
+
+[project.urls]
+Homepage = "https://rainz.ai/spec/ax-1.0/"
+Repository = "https://github.com/adirnur/ax-protocol"
+Issues = "https://github.com/adirnur/ax-protocol/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/axs_client"]
